@@ -19,14 +19,17 @@ artist_id <- '95025'
 
 #get artists songs 
 artist_songs <- get_artist_songs_df(95025)
+
+#test the songs in the artist_songs
 songs[2]
 
 str(artist_songs)
 
-
 lyrics_file <- "artist_lyrics.txt"
 
-my_song_lyrics <- get_lyrics_id(song_id='7007202', access_token = genius_token(TRUE))
+get_lyrics_id(song_id = 7007202, access_token=genius_token(TRUE))
+
+my_song_lyrics <- get_lyrics_id(song_id=7007202, access_token = genius_token(TRUE))
 
 cat(paste0(song_lyrics, "\n"), file = lyrics.file, append = TRUE)
 

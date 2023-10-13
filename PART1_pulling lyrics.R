@@ -10,7 +10,7 @@ genius_token(TRUE)
 # GENIUS TOKEN: Wp8g01LMuGtYZTnJpWv0q8dq4pc_3_4vQEXNnqn7-IkYLCBV64drM27eWQpdXw97
 
 #finding the top/most popular songs of an artist (list of 30)
-listofceliacruz <- search_song('Celia Cruz', n_results=30, access_token = genius_token(TRUE))
+listofceliacruz <- search_song('Celia Cruz', n_results=10, access_token = genius_token(TRUE))
 
 #finding the songid for a song
 quimbara <- search_genius(search_term = "Quimbara")
